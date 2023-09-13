@@ -95,3 +95,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Mi CSS */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.fondoCarta{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffffa1;
+  border-radius: 50px;
+}
+
+button:hover{
+  border-radius: 30px;
+}
+
+button {
+  margin: 10px;
+  background-color: #FF6000;
+}
