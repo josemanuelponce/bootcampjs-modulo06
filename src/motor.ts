@@ -1,12 +1,13 @@
 import {puntos} from './model';
 
+
 // Funcion para generar numero aleatorio y para no incluir el numero , 8, 9.
 export const generarNumeroAleatorio = (): number => {
     return Math.floor(Math.random() * 10);
      
  }
  // Funcion para generar carta
- export const generarCarta = (numero: number): number => {
+export const generarCarta = (numero: number): number => {
      if (numero === 0) {
          return 1;
      }
@@ -16,7 +17,7 @@ export const generarNumeroAleatorio = (): number => {
  
  
  // Funcion para poner valor a cada carta
- export const calcularCarta = (valorCarta: number): number => {
+export const calcularCarta = (valorCarta: number): number => {
      if (valorCarta > 7) {
          return 0.5
      }else{
@@ -24,12 +25,9 @@ export const generarNumeroAleatorio = (): number => {
      }
  };
 
- export const sumarPuntos = (valor : number) => {
+export const sumarPuntos = (valor : number) => {
     puntos.puntuacion += valor;
 };
-
-
-// Funcion para ganar o perder la partida
 
 
 export const devolverMensajePlantarse = () => {
@@ -46,6 +44,7 @@ export const devolverMensajePlantarse = () => {
     }
     
 };
+
 
 // Funcion para mostrar carta
 export const obtenerUrlCarta = (valorCarta: number): string => {
@@ -77,5 +76,3 @@ export const obtenerUrlCarta = (valorCarta: number): string => {
     
 }
 };
-
-
